@@ -1,0 +1,464 @@
+https://youtu.be/VjnSVBeZBSs?si=owZbQnfhXwoDjj-u
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="banner">
+        <header>
+          <div class="navbar">
+            <a href="" class="logo">
+              <h4>Luxury</h4>
+              <h6>Hotel</h6>
+            </a>
+            <nav>
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Facilities</a></li>
+                <li><a href="">Rooms</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <section class="lux">
+          <p>WELCOME TO</p>
+          <h1>LUXURY</h1>
+          <h4>HOTELS</h4>
+          <p id="p">
+            Book your stay and enjoy Luxury <br />
+            redefined at the most affordable rates.
+          </p>
+        </section>
+        <a href="mailto:oluwadunsindavid21@gmail.com" class="lux-btn"
+          >BOOK NOW</a
+        >
+        <h5>Scroll</h5>
+      </section>
+      <section class="explore">
+        <h3>All our room types are including complementary breakfast</h3>
+        <div class="explore1">
+          <div class="ex-txt">
+            <h4>Luxury redefined</h4>
+            <p>
+              Our rooms are designed to transport you into an environment made
+              for leisure.Take your mind off the day-to-day of home life and
+              find a private paradise for yourself
+            </p>
+            <a href="">Explore</a>
+          </div>
+          <div class="ex-img">
+            <img src="img/background.jpeg" alt="" />
+          </div>
+        </div>
+        <div class="explore2">
+          <div class="ex-txt">
+            <h4>Luxury redefined</h4>
+            <p>
+              Our rooms are designed to transport you into an environment made
+              for leisure.Take your mind off the day-to-day of home life and
+              find a private paradise for yourself
+            </p>
+            <a href="">Explore</a>
+          </div>
+          <div class="ex-img">
+            <img src="img/background.jpeg" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <!-- <div class="diamond"></div> -->
+
+      <section class="footer">
+        <div class="lux-info">
+          <a href="" class="footer-logo">
+            <h4>Luxury</h4>
+            <h6>Hotel</h6>
+          </a>
+          <p>Admiralty University of Nigeria, Ibusa</p>
+          <p>0703-601-0547</p>
+          <a href="mailto:oluwadunsindavid21@gmail.com" class="mail"
+            >oluwadunsindavid21@gmail.com</a
+          >
+        </div>
+        <div class="lux-about">
+          <ul>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Terms and Conditions</a></li>
+          </ul>
+        </div>
+        <div class="lux-socials">
+          <ul>
+            <li><a href="">Facebook</a></li>
+            <li><a href="">X</a></li>
+            <li><a href="08026402656">WhatApp</a></li>
+          </ul>
+        </div>
+        <div class="lux-news">
+          <h4>Subscribe to our newsletter</h4>
+          <div class="input">
+            <input type="text" placeholder="Email Address" />
+            <button type="submit">OK</button>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+THE STYLE BELOW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(img/IMG-20230930-WA0026.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 7rem;
+}
+
+.navbar {
+  /* background-color: green; */
+  display: flex;
+  justify-content: space-between;
+  /* height: 100px; */
+}
+
+.navbar .logo {
+  background-color: rgb(230, 179, 114);
+  border-radius: 0 0 20px 20px;
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.logo h6 {
+  font-size: 10px;
+}
+
+nav ul li {
+  line-height: 100px;
+  list-style: none;
+  /*it removes the dot @ the front of the list*/
+  display: inline-block;
+  /*arranges the list horizontally*/
+  margin: 0 35px;
+  /*creates space in between the listed items*/
+}
+
+.navbar ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  position: relative;
+}
+
+.navbar ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  /*makes the line invisible/ hidden*/
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  /*to add some space between the text and the line*/
+  transition: 0.3s; /*make the green line move from left to right when cursor is moved over the menu*/
+}
+
+/* things that should happen when you hover your mouse cursor on the text */
+.navbar ul li a:hover::after {
+  width: 100%; /*makes the line visible again*/
+}
+
+.lux {
+  /* background-color: red; */
+  margin-top: 100px;
+  color: #fff;
+  letter-spacing: 5px;
+}
+
+.lux p {
+  font-size: 45px;
+  margin: 5px 0;
+}
+
+.lux h1 {
+  font-size: 130px;
+  letter-spacing: 10px;
+  margin: 5px 0;
+}
+
+.lux h4 {
+  font-size: 60px;
+  margin: 5px 0;
+}
+
+.lux #p {
+  font-size: 25px;
+  letter-spacing: 3px;
+  margin: 5px 0;
+}
+
+.lux-btn {
+  background-color: burlywood;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+}
+
+.banner h5 {
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+
+.explore {
+  margin: 0 5rem;
+}
+
+.explore h3 {
+  text-align: center;
+  margin: 2.5rem;
+}
+
+.explore1 {
+  color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.explore1 a {
+  background-color: burlywood;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.ex-txt {
+  min-width: 30vw;
+  font-size: 25px;
+  color: darkblue;
+  padding: 0 20px;
+  border-left: 3px solid darkblue;
+}
+
+.ex-txt h4 {
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.ex-txt p {
+  font-size: 30px;
+  margin: 10px 0 40px;
+}
+
+.explore-btn {
+  background-color: burlywood;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 7px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ex-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.ex-img img {
+  width: 600px;
+}
+
+.explore2 {
+  color: #fff;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.explore2 a {
+  background-color: burlywood;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgb(12, 12, 56);
+  padding: 50px 0;
+}
+
+.footer {
+  margin: 0 5rem;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+.lux-info .footer-logo {
+  color: #fff;
+  text-decoration: none;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.lux-info .footer-logo h6 {
+  font-size: 10px;
+  margin-left: 12%;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.lux-info p {
+  margin: 10px 0;
+}
+
+.lux-info .mail {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lux-about li,
+.lux-socials li {
+  list-style: none;
+  margin: 25px;
+}
+
+.lux-about a,
+.lux-socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lux-news h4 {
+  margin: 20px 0;
+  font-size: 15px;
+  text-align: left;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid burlywood;
+}
+
+.input input {
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: rgb(12, 12, 56);
+  color: #fff;
+}
+
+.input input::placeholder {
+  color: #fff;
+}
+
+.input button {
+  color: rgb(12, 12, 56);
+  background-color: burlywood;
+  border: none;
+  padding: 0 15px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.diamond {
+    background-color: red;
+    width: 10%;
+    height: 100px;
+    margin: 0 auto;
+    transform: rotateX(50)
+}
