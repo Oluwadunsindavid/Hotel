@@ -131,7 +131,7 @@ nav {
 }
 
 .nav__links {
-  /* background-color: rgba(222, 184, 135, .7); */
+  background-color: rgba(0,0,0,.09);
   backdrop-filter: blur(10px);
   list-style: none;
   position: absolute;
@@ -156,6 +156,7 @@ nav {
   padding-bottom: 8px;
   color: var(--white);
   transition: 0.3s;
+  text-transform: uppercase;
 }
 
 .nav__btn {
