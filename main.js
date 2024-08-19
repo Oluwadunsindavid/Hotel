@@ -24,4 +24,4 @@ let sr = ScrollReveal({
 
 sr.reveal("#nav", {origin: "left", delay: 700});
 sr.reveal("#home", {origin: "top", delay: 600} );
-sr.reveal(".explore", {origin: "top", delay: 700});
+sr.reveal(".explore", {origin: "right", delay: 700});
