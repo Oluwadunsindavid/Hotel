@@ -17,18 +17,11 @@ navLinks.addEventListener("click", (e) => {
 
 // SCROLL REVEAL
 
-const scrollRevealOption = {
-    distance: "50px",
-    origin: "bottom",
-    duration: 1000,
-};
-
-// header container
-ScrollReveal().reveal("header__container p", {
-    ...scrollRevealOption,
+let sr = ScrollReveal({
+    duration: 2500,
+    distance: "60px",
 });
 
-ScrollReveal().reveal("header__container h1", {
-    ...scrollRevealOption,
-    delay: 500,
-});
+sr.reveal("#nav", {origin: "left", delay: 700});
+sr.reveal("#home", {origin: "top", delay: 600} );
+sr.reveal(".explore", {origin: "top", delay: 700});
