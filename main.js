@@ -26,3 +26,4 @@ sr.reveal("#nav", {origin: "left", delay: 700});
 sr.reveal("#home", {origin: "top", delay: 600} );
 sr.reveal(".explore1", {origin: "right", delay: 500});
 sr.reveal(".explore2", {origin: "left", delay: 1000});
+sr.reveal(".footer", {origin: "bottom", delay: 1000});
