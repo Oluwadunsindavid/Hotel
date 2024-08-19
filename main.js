@@ -27,3 +27,26 @@ sr.reveal("#home", {origin: "top", delay: 600} );
 sr.reveal(".explore1", {origin: "right", delay: 500});
 sr.reveal(".explore2", {origin: "left", delay: 1000});
 sr.reveal(".footer", {origin: "bottom", delay: 1000});
+
+/* 
+.faci-img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.faci-img img {
+  width: 100%;
+}
+
+.faci-text {
+  position: absolute;
+  color: #000;
+  bottom: 0;
+  left: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+*/

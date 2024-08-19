@@ -318,18 +318,60 @@ nav {
   }
 }
 
-.WIP {
-    width: 250px;
-    height: 250px;
-    background-color: burlywood;
-    text-align: center;
-    margin: 25px auto;
-    border-radius: 50%;
-    padding: 10px;
+.explore {
+  margin: 0 5rem;
 }
 
-.WIP h1 {
-    text-align: center;
-    line-height: 80px;
-    color: red;
+.explore h2 {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.explore p {
+  text-align: center;
+  margin: 1.5rem;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.faci-img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  object-fit: contain;
+  position: relative;
+  margin-bottom: 7rem;
+}
+
+.faci-img img {
+  width: 100%;
+  height: 30%;
+  margin: 0 auto;
+}
+
+.faci-text {
+  position: absolute;
+  color: #000;
+  bottom: -25px;
+  left: 50%;
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 0 10%;
+}
+
+@media (width < 900px) {
+  #SP {
+    padding: 0 5%;
+  }
+}
+
+@media (width < 600px) {
+  #SP {
+    bottom: -45px;
+  }
 }
