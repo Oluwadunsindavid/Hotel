@@ -117,8 +117,6 @@ nav {
 }
 
 .nav__bar {
-  /* background-color: red; */
-  /* background-color: var(--primary-color); */
   background-color: transparent;
   backdrop-filter: blur(10px);
   padding: 1rem;
@@ -169,7 +167,6 @@ nav {
 
 .header__container {
   padding-block: 10rem 15rem 5rem 10rem;
-  /* background-color: green; */
   margin: 0 auto;
 }
 

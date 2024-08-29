@@ -81,6 +81,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .logo {
   max-width: 120px;
 }
@@ -113,8 +117,8 @@ nav {
 }
 
 .nav__bar {
-  /* background-color: red; */
-  background-color: var(--primary-color);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -129,7 +133,8 @@ nav {
 }
 
 .nav__links {
-  background-color: rgba(222, 184, 135, 0.9);
+  background-color: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(10px);
   list-style: none;
   position: absolute;
   width: 100%;
@@ -318,18 +323,157 @@ nav {
   }
 }
 
+.rooms {
+  margin: 0 5rem;
+}
+
+.rooms h2 {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.slides {
+  border: 1px solid black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin: 20px 0;
+  /* padding: 2px; */
+}
+
+.carousel {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 100%;
+  /* border-radius: 10px; */
+}
+
+.image-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+
+img {
+  object-fit: cover;
+  width:  100%;
+  /* height: 700px; */
+}
+
+.carousel .p {
+  text-align: center;
+  background-color: rgb(12, 12, 56);
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.carousel .p2 {
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.carousel .plus {
+  cursor: pointer;
+  color: burlywood;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 2px 10px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.readmore {
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#more {
+  display: none;
+}
+
+#amount {
+  background-color: burlywood;
+  color: #ffffff;
+  border: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+}
+
+@media (width < 620px) {
+  .rooms {
+    margin: 0 1.5rem;
+  }
+  .carousel .p {
+    font-size: 20px;
+  }
+
+  .carousel .p2 {
+    font-size: 13px;
+  }
+
+  .carousel .plus {
+    font-size: 16px;
+  }
+}
+
+@media (width < 500px) {
+  .carousel .p {
+    font-size: 20px;
+  }
+
+  .carousel .p2 {
+    font-size: 13px;
+  }
+
+  .carousel .plus {
+    font-size: 16px;
+  }
+
+  .readmore {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* 2nd slideshow */
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* 
 .WIP {
-    width: 250px;
-    height: 250px;
-    background-color: burlywood;
-    text-align: center;
-    margin: 25px auto;
-    border-radius: 50%;
-    padding: 10px;
+  width: 250px;
+  height: 250px;
+  background-color: burlywood;
+  text-align: center;
+  margin: 25px auto;
+  border-radius: 50%;
+  padding: 10px;
 }
 
 .WIP h1 {
-    text-align: center;
-    line-height: 80px;
-    color: red;
-}
+  text-align: center;
+  line-height: 80px;
+  color: red;
+} */

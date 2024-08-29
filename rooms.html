@@ -15,7 +15,7 @@
       <nav>
         <div class="nav__bar">
           <div class="logo">
-            <a href="index.html"><img src="img/JLI LOGO.png"/></a>
+            <a href="index.html"><img src="img/JLI LOGO.png" /></a>
           </div>
           <div class="nav__menu__btn" id="menu-btn">
             <i class="ri-menu-line"></i>
@@ -27,20 +27,113 @@
           <li><a href="rooms.html">Rooms</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
-        <!-- <a href="mailto:oluwadunsindavid21@gmail.com"><button class="btn nav__btn"><b>Book Now</b></button></a> -->
       </nav>
       <div class="section__container header__container" id="home">
         <p>Simple - Unique - Friendly</p>
-        <h1>WELCOME TO <br> <span class="joul">JOUL LINK INT'L</span> <span class="hotel"> <br>HOTELS</span></h1>
-        <p>Book your stay and enjoy Luxury <br> redefined at the most affordable rates.</p>
-      <a href="mailto:oluwadunsindavid21@gmail.com"><button class="btn banner_btn"><b>Book Now</b></button></a>
+        <h1>
+          WELCOME TO <br />
+          <span class="joul">JOUL LINK INT'L</span>
+          <span class="hotel"> <br />HOTELS</span>
+        </h1>
+        <p>
+          Book your stay and enjoy Luxury <br />
+          redefined at the most affordable rates.
+        </p>
+        <a href="mailto:oluwadunsindavid21@gmail.com"
+          ><button class="btn banner_btn"><b>Book Now</b></button></a
+        >
       </div>
     </header>
-        <div class="WIP">
-        <h1>WORK IN PROGRESS <br> :)</h1>
-    </div>
+    <section class="rooms">
+      <h2>ROOMS AND RATES</h2>
+      <p class="p">
+        Each of our bright, light-flooded rooms come with everything you could
+        possibly need for comfortable stay. And yes, comfort isn't our only
+        objective, we also value good design, sleek contemporary furnishing
+        complemented by the rich tones of nature's palette as visible from our
+        rooms' view windows and terraces.
+      </p>
+      <div class="slides">
+        <div class="carousel">
+          <div class="image-container" id="imgs">
+            <img src="img/ali-moradi-vz9IbCAXHKQ-unsplash.jpg" alt="" />
+            <img
+              src="img/frames-for-your-heart-cpD5BMEmgLk-unsplash.jpg"
+              alt=""
+            />
+            <img src="img/igor-savelev-7OhdIQM-6eY-unsplash.jpg" alt="" />
+          </div>
+          <p class="p">SINGLE ROOM</p>
+          <div class="readmore" id="readmore">
+            <p class="p2">
+              <span class="plus" onclick="myFunction()" id="myBtn"> &#43;</span>
+              VIEW ROOM DETAILS <span id="dots"></span
+              ><span id="more"
+                ><br />Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Velit voluptates beatae quisquam modi voluptate, perspiciatis
+                doloribus recusandae magnam quidem similique in necessitatibus,
+                omnis aliquid veritatis cupiditate eius officia vitae
+                illo?</span
+              >
+            </p>
+            <!-- <button onclick="myFunction()" id="myBtn">Readmore</button> -->
+            <button id="amount">$147 Avg/night</button>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- 2nd slide show -->
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="image-container">
+            <img
+              src="img/ali-moradi-vz9IbCAXHKQ-unsplash.jpg"
+              style="width: 100%"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="img/frames-for-your-heart-cpD5BMEmgLk-unsplash.jpg"
+          style="width: 100%"
+        />
+      </div>
+
+      <div class="mySlides fade">
+        <img
+          src="img/igor-savelev-7OhdIQM-6eY-unsplash.jpg"
+          style="width: 100%"
+        />
+      </div>
+      <div>
+        <p class="p">DOUBLE ROOM</p>
+        <div class="readmore" id="readmore">
+          <p class="p2">
+            <span class="plus" onclick="myFunction()" id="myBtn"> &#43;</span>
+            VIEW ROOM DETAILS <span id="dots"></span
+            ><span id="more"
+              ><br />Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Velit voluptates beatae quisquam modi voluptate, perspiciatis
+              doloribus recusandae magnam quidem similique in necessitatibus,
+              omnis aliquid veritatis cupiditate eius officia vitae illo?</span
+            >
+          </p>
+          <!-- <button onclick="myFunction()" id="myBtn">Readmore</button> -->
+          <button id="amount">$147 Avg/night</button>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="WIP">
+      <h1>
+        WORK IN PROGRESS <br />
+        :)
+      </h1>
+    </div> -->
     <script src="main.js"></script>
+    <script src="rooms.js"></script>
   </body>
 </html>

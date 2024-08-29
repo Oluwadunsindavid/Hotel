@@ -15,46 +15,6 @@
   box-sizing: border-box;
 }
 
-.section__container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
-  margin: 10px;
-}
-
-.section__subheader {
-  margin-bottom: 0.5rem;
-  position: relative;
-  font-weight: 500;
-  letter-spacing: 2px;
-  color: var(--text-dark);
-}
-
-.section__subheader::after {
-  position: absolute;
-  content: "";
-  top: 50%;
-  transform: translate(1rem);
-  height: 2px;
-  width: 4rem;
-  background-color: var(--primary-color);
-}
-
-.section__header {
-  max-width: 600px;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  font-weight: 600;
-  line-height: 3rem;
-  color: var(--text-dark);
-}
-
-.section__description {
-  max-width: 600px;
-  margin-bottom: 1rem;
-  color: var(--text-light);
-}
-
 .btn {
   padding: 0.75rem 1.5rem;
   outline: none;
@@ -113,8 +73,8 @@ nav {
 }
 
 .nav__bar {
-  /* background-color: red; */
-  background-color: var(--primary-color);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -129,7 +89,8 @@ nav {
 }
 
 .nav__links {
-  background-color: rgba(222, 184, 135, 0.9);
+  background-color: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(10px);
   list-style: none;
   position: absolute;
   width: 100%;
@@ -157,41 +118,6 @@ nav {
 
 .nav__btn {
   display: none;
-}
-
-.header__container {
-  padding-block: 10rem 15rem 5rem 10rem;
-  /* background-color: green; */
-  margin: 0 auto;
-}
-
-.header__container p {
-  margin: 1.5rem 0;
-  font-size: 1.2rem;
-  color: var(--white);
-  text-align: center;
-  opacity: 0.8;
-}
-
-.header__container h1 {
-  font-size: 3rem;
-  font-weight: 600;
-  line-height: 4.5rem;
-  color: var(--white);
-  text-align: center;
-}
-
-.header__container h1 .hotel {
-  color: var(--primary-color);
-  letter-spacing: 5px;
-}
-
-.banner_btn {
-  background-color: var(--primary-color);
-  margin: 5rem auto auto auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (width > 768px) {
@@ -267,58 +193,274 @@ nav {
   }
 }
 
+.header h1 {
+  padding-top: 200px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.explore {
+  margin: 0 1.5rem;
+}
+
+.explore h2 {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.explore p {
+  text-align: center;
+  margin: 2.5rem 1rem;
+}
+
+.mail {
+  color: #000;
+  display: flex;
+  justify-content: center;
+}
+
+.map {
+  /* background-color: red; */
+  color: #000;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  font-weight: bolder;
+  font-size: 20px;
+  color: #000;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.add1 p {
+  margin: 0;
+}
+
+form {
+  margin: 20px 0px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+form:hover {
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-control input,
+.form-control select,
+.form-control textarea {
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 10px;
+  display: block;
+  width: 95%;
+}
+
+.form-control input [type="radio"],
+.form-control input [type="checkbox"] {
+  display: inline-block;
+  width: auto;
+}
+
+.button {
+  background-color: burlywood;
+  border: 1px solid #777;
+  border-radius: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  display: block;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button a {
+  color: #000;
+}
+
+footer {
+  background-color: rgb(12, 12, 56);
+  padding: 50px 0;
+}
+
+.footer {
+  margin: 0 1.5rem;
+  padding: 20px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  font-size: 15px;
+}
+
+.lux-info .logo {
+  display: none;
+}
+
+.lux-info p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.lux-info a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.lux-about {
+  text-align: center;
+}
+
+.lux-socials {
+  text-align: center;
+}
+
+.lux-about li,
+.lux-socials li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.lux-about a,
+.lux-socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lux-news h4 {
+  margin: 20px 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 2px solid burlywood;
+}
+
+.input input {
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: rgb(12, 12, 56);
+  color: #fff;
+}
+
+.input input::placeholder {
+  color: #fff;
+}
+
+.input button {
+  color: rgb(12, 12, 56);
+  background-color: burlywood;
+  border: none;
+  padding: 0 15px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (width > 500px) {
+  .input {
+    max-width: 60%;
+    transition: ease-out 0.5s;
+  }
+}
+
 @media (width > 768px) {
-  .header__container {
-    padding: 0 7rem;
-    padding-block-end: 5rem;
-  }
-  .header__container p {
-    margin: 1.5rem 0;
-    font-size: 1.6rem;
-    text-align: left;
-    opacity: 1;
+  .explore {
+    margin: 0 5rem;
   }
 
-  .header__container h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
+  .explore h2 {
     text-align: left;
   }
 
-  .header__container .joul {
-    font-size: 70px;
-    font-weight: 600;
+  .explore p {
+    text-align: left;
+    margin: 2rem 0rem;
+  }
+  .address {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: 0.3s;
   }
 
-  .header__container h1 .hotel {
-    letter-spacing: 15px;
-  }
-
-  .banner_btn {
-    background-color: var(--primary-color);
-    margin: 5rem auto auto auto;
+  .mail {
+    color: #000;
     display: flex;
+    justify-content: left;
+  }
+
+  .map {
+    justify-content: left;
+  }
+
+  .footer {
+    margin: 0 5rem;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
+    gap: 25px;
+  }
+
+  .lux-info .logo {
+    display: block;
+    width: 120px;
+  }
+
+  .lux-info p {
+    text-align: left;
+  }
+
+  .lux-info a {
+    justify-content: left;
+  }
+
+  .input {
+    max-width: 100%;
+  }
+
+  .lux-news h4 {
+    font-size: 20px;
+    text-align: left;
   }
 }
 
-@media (width > 1000px) {
-  .header__container {
-    padding: 5rem;
-    padding-block-end: 5rem;
-    transition: 0.3s;
+@media (width > 1100px) {
+  .footer {
+    gap: 20px;
   }
 }
 
-@media (width > 1200px) {
-  .header__container {
-    padding-block-end: 5rem;
-    transition: 0.3s;
-  }
-}
-
-.WIP {
+/* .WIP {
     width: 250px;
     height: 250px;
     background-color: burlywood;
@@ -332,4 +474,4 @@ nav {
     text-align: center;
     line-height: 80px;
     color: red;
-}
+} */

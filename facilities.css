@@ -81,6 +81,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .logo {
   max-width: 120px;
 }
@@ -114,7 +118,9 @@ nav {
 
 .nav__bar {
   /* background-color: red; */
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
+  background-color: transparent;
+  backdrop-filter: blur(10px);
   padding: 1rem;
   display: flex;
   align-items: center;
@@ -129,7 +135,8 @@ nav {
 }
 
 .nav__links {
-  background-color: rgba(222, 184, 135, 0.9);
+  background-color: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(10px);
   list-style: none;
   position: absolute;
   width: 100%;
@@ -161,7 +168,6 @@ nav {
 
 .header__container {
   padding-block: 10rem 15rem 5rem 10rem;
-  /* background-color: green; */
   margin: 0 auto;
 }
 
@@ -364,6 +370,12 @@ nav {
   padding: 0 10%;
 }
 
+@media (width < 770px) {
+  .explore {
+    margin: 0 1.5rem;
+  }
+}
+
 @media (width < 900px) {
   #SP {
     padding: 0 5%;
@@ -373,5 +385,138 @@ nav {
 @media (width < 600px) {
   #SP {
     bottom: -45px;
+  }
+}
+
+footer {
+  background-color: rgb(12, 12, 56);
+  padding: 50px 0;
+}
+
+.footer {
+  margin: 0 1.5rem;
+  padding: 20px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  font-size: 15px;
+}
+
+.lux-info .logo {
+  display: none;
+}
+
+.lux-info p {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.lux-info a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.lux-about {
+  text-align: center;
+}
+
+.lux-socials {
+  text-align: center;
+}
+
+.lux-about li,
+.lux-socials li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.lux-about a,
+.lux-socials a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.lux-news h4 {
+  margin: 20px 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 2px solid burlywood;
+}
+
+.input input {
+  outline: none;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  background-color: rgb(12, 12, 56);
+  color: #fff;
+}
+
+.input input::placeholder {
+  color: #fff;
+}
+
+.input button {
+  color: rgb(12, 12, 56);
+  background-color: burlywood;
+  border: none;
+  padding: 0 15px;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media (width > 500px) {
+  .input {
+    max-width: 60%;
+    transition: ease-out 0.5s;
+  }
+}
+
+@media (width > 768px) {
+  .footer {
+    margin: 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .lux-info .logo {
+    display: block;
+    width: 120px;
+  }
+
+  .lux-info p {
+    text-align: left;
+  }
+
+  .lux-info a {
+    justify-content: left;
+  }
+
+  .input {
+    max-width: 100%;
+  }
+
+  .lux-news h4 {
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+@media (width > 1100px) {
+  .footer {
+    gap: 20px;
   }
 }
