@@ -292,6 +292,7 @@ form:hover {
   font-size: 20px;
   display: block;
   width: 100%;
+  padding: 10px;
   margin-top: 50px;
   margin-bottom: 20px;
   cursor: pointer;
@@ -299,6 +300,16 @@ form:hover {
 
 button a {
   color: #000;
+}
+
+.kite {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(12, 12, 56);
+  margin: 0 auto;
+  transform: rotate(45deg);
+  position: relative;
+  top: 35px;
 }
 
 footer {

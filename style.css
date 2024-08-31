@@ -457,6 +457,16 @@ nav {
   }
 }
 
+.kite {
+  width: 65px;
+  height: 65px;
+  background-color: rgb(12, 12, 56);
+  margin: 0 auto;
+  transform: rotate(45deg);
+  position: relative;
+  top: 35px;
+}
+
 footer {
   background-color: rgb(12, 12, 56);
   padding: 50px 0;
